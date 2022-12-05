@@ -1,0 +1,254 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Css File -->
+    <link rel="stylesheet" href="dist/output.css" />
+
+    <!-- Google Fonts -->
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="py-8">
+      <!-- container -->
+      <div class="container px-4 mx-auto flex justify-between md:px-0">
+        <!-- logo -->
+        <img src="./assets/images/logo.svg" alt="" />
+        <!-- links -->
+        <ul class="hidden items-end space-x-8 md:flex">
+          <li>
+            <a
+              class="text-lg transition-all duration-150 hover:text-SoftRed"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-lg transition-all duration-150 hover:text-SoftRed"
+              href="#"
+              >New</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-lg transition-all duration-150 hover:text-SoftRed"
+              href="#"
+              >Popular</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-lg transition-all duration-150 hover:text-SoftRed"
+              href="#"
+              >Trending</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-lg transition-all duration-150 hover:text-SoftRed"
+              href="#"
+              >Categories</a
+            >
+          </li>
+        </ul>
+        <!-- menu btn -->
+        <button id="menu-btn" class="border-none md:hidden">
+          <img src="./assets/images/icon-menu.svg" alt="" />
+        </button>
+        <!-- overlay -->
+        <div
+          id="overlay"
+          class="hidden absolute top-0 left-0 z-10 h-screen w-screen bg-Overllay"></div>
+        <!-- mobile menu -->
+        <div
+          id="close-btn"
+          class="hide z-10 fixed top-0 right-0 w-2/3 h-full p-8 bg-OffWhite flex flex-row-reverse items-start justify-between transition-all duration-300">
+          <!-- close btn -->
+          <button>
+            <img src="./assets/images/icon-menu-close.svg" alt="" />
+          </button>
+          <!-- links -->
+          <ul class="self-center flex flex-col space-y-4">
+            <li><a class="font-bold text-lg" href="#">Home</a></li>
+            <li><a class="font-bold text-lg" href="#">New</a></li>
+            <li><a class="font-bold text-lg" href="#">Popular</a></li>
+            <li><a class="font-bold text-lg" href="#">Trending</a></li>
+            <li><a class="font-bold text-lg" href="#">Categories</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main section -->
+    <main>
+      <div class="flex flex-col space-y-14 container pb-5 px-4 mx-auto md:px-0">
+        <!-- frist -->
+        <div
+          class="flex flex-col space-y-8 md:flex-row md:space-y-0 md:space-x-8">
+          <!-- right side -->
+          <div class="flex flex-col space-y-4 md:w-3/4">
+            <div class="">
+              <!-- desctop img -->
+              <img
+                class="hidden w-full md:block"
+                src="./assets/images/image-web-3-desktop.jpg"
+                alt="" />
+              <!-- moblie img -->
+              <img
+                class="w-full md:hidden"
+                src="./assets/images/image-web-3-mobile.jpg"
+                alt="" />
+            </div>
+
+            <div
+              class="flex flex-col space-y-3 md:flex-row md:justify-between md:space-x-4 md:space-y-0">
+              <h1
+                class="text-5xl font-bold text-VeryDarkBlue md:w-1/2 md:text-7xl">
+                The Bright Future of Web 3.0?
+              </h1>
+
+              <div class="flex flex-col space-y-7 text-left md:w-1/2">
+                <p class="text-xl max-w-md">
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <button
+                  class="block w-fit font-bold text-xl tracking-widest bg-SoftRed text-OffWhite p-4 transition-all duration-150 hover:bg-VeryDarkBlue">
+                  Read more
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Left -->
+          <div class="bg-VeryDarkBlue py-8 px-6 space-y-6 md:w-2/6">
+            <!-- left side -->
+            <div class="text-4xl font-bold text-SoftOrange">New</div>
+            <div class="flex flex-col space-y-6">
+              <!-- first -->
+              <div class="space-y-3 border-b border-b-GrayishBlue pb-6">
+                <div
+                  class="text-xl font-bold text-OffWhite cursor-pointer transition-all duration-150 hover:text-SoftOrange">
+                  Hydrogen VS Electric Cars
+                </div>
+                <p class="text-GrayishBlue text-lg max-w-md">
+                  Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+              </div>
+              <!-- second -->
+              <div class="space-y-3 border-b border-b-GrayishBlue pb-6">
+                <div
+                  class="text-xl font-bold text-OffWhite cursor-pointer transition-all duration-150 hover:text-SoftOrange">
+                  The Downsides of AI Artistry
+                </div>
+                <p class="text-GrayishBlue text-lg max-w-md">
+                  What are the possible adverse effects of on-demand AI image
+                  generation?
+                </p>
+              </div>
+              <!-- third -->
+              <div class="space-y-3">
+                <div
+                  class="text-xl font-bold text-OffWhite cursor-pointer transition-all duration-150 hover:text-SoftOrange">
+                  Is VC Funding Drying Up?
+                </div>
+                <p class="text-GrayishBlue text-lg max-w-md">
+                  Private funding by VC firms is down 50% YOY. We take a look at
+                  what that means.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- bottom -->
+        <div
+          class="flex flex-col space-y-6 md:flex-row md:space-y-0 md:justify-between md:items-center md:space-x-6">
+          <!-- first -->
+          <div class="flex items-center space-x-6">
+            <img
+              src="./assets/images/image-retro-pcs.jpg"
+              class="w-1/5"
+              alt="" />
+            <div class="flex flex-col space-y-5">
+              <span class="font-bold text-5xl text-GrayishBlue">01</span>
+              <div
+                class="font-bold text-2xl cursor-pointer transition-all duration-150 hover:text-SoftRed">
+                Reviving Retro PCs
+              </div>
+              <p class="text-Darkgrayishblue text-lg leading-normal max-w-md">
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </div>
+          </div>
+
+          <!-- second -->
+          <div class="flex items-center space-x-6">
+            <img
+              src="./assets/images/image-top-laptops.jpg"
+              class="w-1/5"
+              alt="" />
+            <div class="flex flex-col space-y-5">
+              <span class="font-bold text-5xl text-GrayishBlue">02</span>
+              <div
+                class="font-bold text-2xl cursor-pointer transition-all duration-150 hover:text-SoftRed">
+                Top 10 Laptops of 2022
+              </div>
+              <p class="text-Darkgrayishblue text-lg leading-normal max-w-md">
+                Our best picks for various needs and budgets.
+              </p>
+            </div>
+          </div>
+
+          <!-- third -->
+          <div class="flex items-center space-x-6">
+            <img
+              src="./assets/images/image-gaming-growth.jpg"
+              class="w-1/5"
+              alt="" />
+            <div class="flex flex-col space-y-5">
+              <span class="font-bold text-5xl text-GrayishBlue">03</span>
+              <div
+                class="font-bold text-2xl cursor-pointer transition-all duration-150 hover:text-SoftRed">
+                The Growth of Gaming
+              </div>
+              <p class="text-Darkgrayishblue text-lg leading-normal max-w-md">
+                How the pandemic has sparked fresh opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- script -->
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const closeBtn = document.getElementById("close-btn");
+      const overlay = document.getElementById("overlay");
+
+      menuBtn.onclick = () => {
+        overlay.classList.remove("hidden");
+        closeBtn.classList.remove("hide");
+      };
+
+      closeBtn.onclick = () => {
+        overlay.classList.add("hidden");
+        closeBtn.classList.add("hide");
+      };
+    </script>
+  </body>
+</html>

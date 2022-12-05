@@ -1,0 +1,9 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hide {
+  right: -100%;
+}
